@@ -1,0 +1,26 @@
+name: Proposta de Tradução
+description: Sugira ou ofereça-se para traduzir o artigo para um novo idioma.
+labels: ["translation", "enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado pelo interesse em traduzir este guia! Sua tradução ajudará a espalhar a filantropia digital para mais comunidades.
+  - type: dropdown
+    id: language
+    attributes:
+      label: Idioma Alvo
+      description: Selecione o idioma para o qual deseja traduzir o artigo.
+      options:
+        - "Inglês (en)"
+        - "Espanhol (es)"
+        - "Outro (especifique abaixo)"
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Detalhes da Proposta
+      placeholder: "Ex: Eu posso realizar a tradução completa para o Espanhol nas próximas 2 semanas."
+    validations:
+      required: true

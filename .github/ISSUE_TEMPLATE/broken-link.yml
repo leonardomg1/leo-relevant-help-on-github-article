@@ -1,0 +1,22 @@
+name: Link Quebrado ou Consulta Desatualizada
+description: Relate um link quebrado ou uma busca do GitHub que não está mais retornando resultados relevantes.
+labels: ["bug", "links"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        As buscas do GitHub mudam às vezes. Se você encontrou um link quebrado ou uma busca ineficiente, relate aqui.
+  - type: input
+    id: broken-link
+    attributes:
+      label: Link ou Busca Problemática
+      placeholder: "Ex: Busca 2: i18n + help wanted"
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Detalhes do Problema
+      placeholder: Explique o que acontece ao clicar no link ou ao rodar a query de busca.
+    validations:
+      required: true

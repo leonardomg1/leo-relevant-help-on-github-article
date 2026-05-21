@@ -1,0 +1,22 @@
+name: Melhoria do Artigo
+description: Sugira correções, novos exemplos ou melhorias na redação e estrutura do artigo.
+labels: ["documentation", "enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por ajudar a aprimorar o conteúdo do artigo!
+  - type: input
+    id: section
+    attributes:
+      label: Seção Afetada
+      placeholder: "Ex: Como escolher um bom projeto / Modelo de issue"
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Descrição da Melhoria Sugerida
+      placeholder: Descreva detalhadamente a melhoria ou correção ortográfica que você sugere fazer.
+    validations:
+      required: true
